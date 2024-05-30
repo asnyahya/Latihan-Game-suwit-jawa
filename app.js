@@ -69,6 +69,9 @@ options.forEach(function (opt) {
     const imgComp = document.querySelector('.img-computer');
     imgComp.src = `img/${compOptions}.png`;
 
+    const result = document.querySelector('.result');
+    result.textContent = '';
+
     //Hentikan pengacakan selama 1s
     setTimeout(() => {
       stopShuffleShow(intervalID, compOptions, results);
